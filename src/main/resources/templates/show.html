@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="/">View All Messages</a><br />
+Title :<span th:text="${bullhorn.title}" ></span><br />
+Content :<span th:text="${bullhorn.content}" ></span><br />
+Posted Date :<span th:text="${bullhorn.postedDate}" ></span><br />
+Posted By :<span th:text="${bullhorn.postedBy}" ></span><br />
+<a th:href="@{/delete/{id}(id=${bullhorn.id})}">Delete this message</a>
+
+
+</body>
+</html>
